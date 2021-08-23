@@ -12,7 +12,8 @@
 <section class="header">
 	<nav>
 		<a href="index.html"><img src="images/glass.png"></a>
-		<div class="nav-links">
+		<div class="nav-links" id="navLinks">
+			<i class="fa fa-times" onclick="hideMenu()"></i>
 			<ul>
 				<li><a href="index.html">HOME</a></li>
 				<li><a href="service.html">SERVICE</a></li>
@@ -21,6 +22,7 @@
 				<li><a href="contact.html">CONTACT</a></li>
 			</ul>
 		</div>
+		<i class="fa fa-bars" onclick="showMenu()"></i>
 	</nav>
 	<div class="text-box">
 		<h1>Glass Bussiness</h1>
@@ -28,6 +30,18 @@
 		<a href="" class="hero-btn">Visit Us To Know More</a>
 	</div>
 </section>
+	<script>
+	var navLinks=document.getElementById("navLinks");
+	function showMenu() 
+	{
+		navLinks.style.right="0";
+	}
+	function hideMenu() 
+	{
+		navLinks.style.right="-200px";
+	}
+</script>
+
 <!------ Service ------>
 <section class="service">
 	<h1>Service</h1>
